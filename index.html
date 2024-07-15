@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>love</title>
+
+  <style>
+     @font-face {
+     font-family: 'HKSNT';
+     src: url('fonts/1.woff') format('woff');
+ }
+
+ div {
+     font-family: 'HKSNT', sans-serif;
+ }
+  </style>
+
+  <style>
+.btn {
+      /* 文字颜色 */
+      color: #0099CC; 
+      /* 清除背景色 */
+      background: transparent; 
+      /* 边框样式、颜色、宽度 */
+      border: 1.5px solid #0099CC;
+      /* 给边框添加圆角 */
+      border-radius: 2px; 
+      /* 字母转大写 */
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+      display: inline-block;
+      font-size: 12px;
+      margin: 3px 1.5px;
+      -webkit-transition-duration: 0.4s; /* Safari */
+      transition-duration: 0.4s;
+      cursor: pointer;
+      text-decoration: none;
+      text-transform: uppercase;
+}
+.btn1 {
+      background-color: white; 
+      color: black; 
+      border: 2px solid #008CBA;
+}
+/* 悬停样式 */
+.btn1:hover {
+      background-color: #008CBA;
+      color: white;
+}
+  </style>
+
+  <style>
+    h3 {
+      font-size: 16px;
+    }
+  </style>
+
+  <style>
+    p {
+      position: fixed;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+    }
+  </style>
+
+  <script>
+    function increaseVolume() {
+      var currentVolume = audio.volume;
+      var newVolume = Math.min(currentVolume + 0.05, 1);
+      audio.volume = newVolume;
+    }
+
+    function decreaseVolume() {
+      var currentVolume = audio.volume;
+      var newVolume = Math.max(currentVolume - 0.05, 0);
+      audio.volume = newVolume;
+    }
+
+    volumeUpButton.addEventListener('click', increaseVolume);
+    volumeDownButton.addEventListener('click', decreaseVolume);
+  </script>
+</head>
+
+<body>
+    <div>
+        <button id="prevButton" class="btn btn1">上一首</button>
+        <button id="nextButton" class="btn btn1">下一首</button>
+        <button id="shuffleButton" class="btn btn1">随机播放</button>
+        <button id="volumeUpButton">+</button>
+        <button id="volumeDownButton">-</button>
+        <script src="1.js"></script>
+        <script src="kb.js"></script>
+    </div>
+
+<div>
+    <audio id="audioPlayer" controls>
+        <source src="" type="audio/mpeg">
+    </audio>
+</div>
+
+
+
+<div>
+    <h3 id="audioTitle">当前播放：无</h3>
+</div>
+</body>
+
+<body>
+  <div>
+    <p>当前版本2.0</p>
+  </div>
+</body>
+  
+  </html>
