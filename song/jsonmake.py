@@ -8,7 +8,7 @@ args = parser.parse_args()
 
 current_directory = os.getcwd()
 
-base_url = "https://cos1sistine-1313238216.cos.ap-shanghai.myqcloud.com/audio/loveshare/"
+base_url = ""
 
 file_list = [file for file in os.listdir(current_directory) if os.path.isfile(os.path.join(current_directory, file))]
 
