@@ -8,6 +8,7 @@ args = parser.parse_args()
 
 current_directory = os.getcwd()
 
+#记得填写这个字段
 base_url = ""
 
 file_list = [file for file in os.listdir(current_directory) if os.path.isfile(os.path.join(current_directory, file))]
