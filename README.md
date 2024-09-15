@@ -19,3 +19,7 @@
 
 ### 关于页面样式  
 没别的，纯**懒** ~~没想法~~
+
+>全部重写了个项目
+>```sh
+>https://github.com/angellsla/music-player
